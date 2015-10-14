@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1">
+
+    <title>Webclown Portfoolio</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- SITE HEADER (TITLE) -->
+      <header class="row site-title">
+        <div class="col-sm-4">
+          <a href="index.html" target="_self" title="Webclown Portfoolio">
+            <!-- Clown "logo" image is in the public domain. Created by DWilliams. Source: https://pixabay.com/en/clown-colorful-circus-fun-642473/ -->
+            <img src="https://pixabay.com/static/uploads/photo/2015/02/19/18/28/clown-642473_640.jpg" alt="Webclown Portfoolio logo" class="site-title__logo img-responsive">
+          </a>
+        </div>
+        <div class="col-sm-8 text-right text-uppercase">
+          <a href="index.html" target="_self" title="Webclown Portfoolio">
+            <!-- Rainbow Text effects by EnjoyCSS. Source: http://enjoycss.com/gallery/text_effects/ea# -->
+            <h1 class="site-title__text site-title--rainbow">WebclOWN</h1>
+            <h3><span class="text-red">Front-</span><span class="text-blue">end</span> <span class="text-teal">Folly</span></h3>
+          </a>
+        </div>
+      </header>
+
+      <!-- HORIZONTAL REFERENCE BELOW SITE HEADER -->
+      <div class="row">
+        <div class="col-md-12">
+          <hr class="header-hr">
+        </div>
+      </div>
+
+      <!-- LEADER -->
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="http://www.fillmurray.com/768/350" srcset="http://www.fillmurray.com/1140/512 1140w, http://www.fillmurray.com/2024/768 2024w" sizes="(min-width: 768px) 100vw"
+                  alt="It's Bill Murray!" class="img-responsive leader-image"
+                  data-toggle="modal" data-target="#project1">
+                <div class="carousel-caption">
+                  It's Bill Murray!
+                </div>
+              </div>
+              <div class="item">
+                <img src="http://place-hoff.com/768/350" srcset="http://place-hoff.com/1140/512 1140w, http://place-hoff.com/2024/768 2024w" sizes="(min-width: 768px) 100vw"
+                  alt="Don't hassle the hoff!" class="img-responsive leader-image"
+                  data-toggle="modal" data-target="#project6">
+                <div class="carousel-caption">
+                  Don't hassle the hoff!
+                </div>
+              </div>
+              <div class="item">
+                <img src="http://placekitten.com/768/350" srcset="http://placekitten.com/1140/512 1140w, http://placekitten.com/2024/768 2024w" sizes="(min-width: 768px) 100vw"
+                alt="Kitten!" class="img-responsive leader-image"
+                data-toggle="modal" data-target="#project2">
+                <div class="carousel-caption">
+                  Kitten!
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT HEADER -->
+      <header class="row">
+        <div class="col-md-12 text-pranked">
+          <h2>Featured <s class="text-purple">Work</s> Pranks</h2>
+        </div>
+      </header>
+
+      <!-- MAIN CONTENT: PORTFOLIO
+        Portfolio items are ordered in 2 equal columns on very small screens (mobile) and in 3 equal columns on all bigger screens;
+        They interchange styling per odd and even items.
+      -->
+      <main class="row text-center portfolio">
+        <article class="col-xs-6 col-md-4 portfolio__item">
+          <img src="http://www.fillmurray.com/555/300" alt="Bill Murray" class="img-responsive" data-toggle="modal" data-target="#project1">
+          <h3>Murray</h3>
+          <p><a href="https://github.com/rubenjs7">Bill</a></p>
+        </article>
+        <article class="col-xs-6 col-md-4 portfolio__item">
+          <img src="http://placekitten.com/555/300" alt="Kittens" class="img-responsive" data-toggle="modal" data-target="#project2">
+          <h3>Kittens *meow*</h3>
+          <p><a href="https://github.com/rubenjs7">*meow*</a></p>
+        </article>
+        <article class="col-xs-6 col-md-4 portfolio__item">
+          <img src="http://placecage.com/555/300" alt="Cage" class="img-responsive" data-toggle="modal" data-target="#project3">
+          <h3>Cage'd</h3>
+          <p><a href="https://github.com/rubenjs7">dont wanna see</a></p>
+        </article>
+        <article class="col-xs-6 col-md-4 portfolio__item">
+          <img src="http://placebeard.it/555/300" alt="Beards" class="img-responsive" data-toggle="modal" data-target="#project4">
+          <h3>Hipster</h3>
+          <p><a href="https://github.com/rubenjs7">Get it, or not</a></p>
+        </article>
+        <article class="col-xs-6 col-md-4 portfolio__item">
+          <img src="http://www.placebear.com/555/300" alt="Bears" class="img-responsive" data-toggle="modal" data-target="#project5">
+          <h3>Sometimes you eat...</h3>
+          <p><a href="https://github.com/rubenjs7">the baer</a></p>
+        </article>
+        <article class="col-xs-6 col-md-4 portfolio__item">
+          <img src="http://place-hoff.com/555/300" alt="Hasselhoff" class="img-responsive" data-toggle="modal" data-target="#project6">
+          <h3>Don't hassle the...</h3>
+          <p><a href="https://github.com/rubenjs7">...hold it!...</a></p>
+        </article>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="row site-footer">
+        <div class="col-md-12 text-center">
+          <p>Great website straight from the ninetees brought to you by the almighty rubenJS.</p>
+          <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- start MODALS (x6) -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel1">Murray raises his eyebrow</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://www.fillmurray.com/555/555" alt="Bill Murray">
+            <p>This was my first project in this class. I learned a lot about HTML and CSS.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-defadivt" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel2">Meow!</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/555/555" alt="Kittens">
+            <p>This was my second project in this class. I learned a lot more about HTML and CSS.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-defadivt" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel3">Worst. Actor. Ever.</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placecage.com/555/555" alt="Cage">
+            <p>This was my third project in this class. Don't remember what I learned.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-defadivt" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel4">Authenticity is just a word</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placebeard.it/555/555" alt="Beards">
+            <p>This was my another project in this class. I learned something about HTML and CSS...</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-defadivt" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel5">Baer</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://www.placebear.com/555/555" alt="Bears">
+            <p>And sometimes the baer eats...</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-defadivt" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel6">Hoffmeister!</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://place-hoff.com/555/555" alt="Hasselhoff">
+            <p>Not for squarepants!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-defadivt" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

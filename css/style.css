@@ -1,0 +1,163 @@
+/******
+
+    Don't be fooled, this shit is very seriouz!
+
+    Cascading Stylesheet by rubenJS for Udacity's Front-End Web Developer Nanodegree.
+    License: Creative Commons Attribution 4.0 International License, http://creativecommons.org/licenses/by/4.0/.
+    Attempting to follow the BEM methodology, see: https://en.bem.info/method/.
+
+******/
+
+/***
+        GENERAL ELEMENTS
+***/
+
+body {
+
+    /* Background pattern created by Sarah Backhouse.
+    Source: http://lea.verou.me/css3patterns/#lined-paper */
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+
+    color: #f00;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 300;
+}
+
+
+/***
+        GENERAL TYPOGRAPHY
+***/
+
+a:link,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold;
+    text-decoration: none;
+    text-shadow: yellow 0 5px 5px;
+}
+
+
+/***
+        MODULES: BLOCKS, ELEMENTS & MODIFIERS (BEM)
+***/
+
+/* SITE HEADER (TITLE) */
+@media (max-width: 768px) {
+    .site-title__logo {
+        /* display: none */
+    }
+}
+
+.site-title__logo {
+    width: 100px;
+    height: 120px;
+    margin-top: 20px;
+
+    /* Flip image horizontally: */
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+}
+
+.site-title__text {
+    font-size: 5rem;
+}
+
+.site-title--rainbow {
+    /* Rainbow Text effects taken from EnjoyCSS. Source: http://enjoycss.com/gallery/text_effects/ea# */
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0);
+    text-align: right;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 3px 0 0 rgb(217,31,38) , 6px 0 0 rgb(226,91,14) , 9px 0 0 rgb(245,221,8) , 12px 0 0 rgb(5,148,68) , 15px 0 0 rgb(2,135,206) , 18px 0 0 rgb(4,77,145) , 21px 0 0 rgb(42,21,113) ;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.site-title--rainbow:hover {
+    text-shadow: -3px 0 0 rgb(217,31,38) , -6px 0 0 rgb(226,91,14) , -9px 0 0 rgb(245,221,8) , -12px 0 0 rgb(5,148,68) , -15px 0 0 rgb(2,135,206) , -18px 0 0 rgb(4,77,145) , -21px 0 0 rgb(42,21,113) ;
+    -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* LEADER */
+.leader-image {
+    border: solid 6px #f00;
+    cursor: zoom-in;
+}
+
+/* HORIZONTAL REFERENCE BELOW SITE HEADER */
+.header-hr {
+    border: dotted 4px #0f0;
+}
+
+/* PORTFOLIO: FEATURED PROJECTS */
+.portfolio__item>img { /* General portfolio item styling */
+    border: solid 6px;
+    cursor: zoom-in;
+}
+
+.portfolio__item:nth-child(odd) { /* Odd numbered portfolio items */
+    color: purple;
+}
+.portfolio__item:nth-child(odd)>img {
+    border-color: yellow;
+}
+.portfolio__item:nth-child(even) { /* Even numbered portfolio items */
+    color: red;
+}
+.portfolio__item:nth-child(even)>img {
+    border-color: green;
+}
+
+/* SITE FOOTER */
+.site-footer {
+    margin: 30px 0 30px 0;
+    border: dotted yellow 10px;
+    padding: 20px;
+}
+
+/* MODALS */
+.modal-body>p {
+    margin: 20px;
+    padding: 0 5%;
+    text-align: center;
+}
+
+
+/***
+        GLOBAL MODIFIERS
+***/
+
+.text-blue,
+.text-pranked {
+    color: #00f;
+}
+.text-teal {
+    color: #0ff;
+}
+.text-purple {
+    color: #f0f;
+}
+.text-red {
+    color: #f00;
+}
