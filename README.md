@@ -1,3 +1,3 @@
-# Udacity Front-end Nanodegree
+Udacity Front-end Nanodegree
 
 # Project 1 - Portfolio
